@@ -84,6 +84,11 @@ a {
   text-align: left;
   min-height: 48px;
   border-radius: 10px;
+  font-family: "Nova Mono", monospace;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

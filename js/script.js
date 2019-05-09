@@ -67,6 +67,16 @@ class Stopwatch {
     this.reset();
     this.print();
   }
+
+  // method: add a result
+  addResult(times) {
+    let resultsElement = document.querySelector(".results");
+    let resultLi = document.createElement("li");
+    if (this.times !== 0) {
+      resultLi.innerHTML = `${this.format(this.times)}`;
+      resultsElement.appendChild(resultLi);
+    }
+  }
 }
 // ----------------------- Stopwatch Class end ----------------------------------
 
@@ -91,3 +101,6 @@ stopButton.addEventListener("click", () => stopwatch.stop());
 
 let resetButton = document.getElementById("reset");
 resetButton.addEventListener("click", () => stopwatch.resetWatch());
+
+let addResultButton = document.getElementById("add-result");
+addResultButton.addEventListener("click", () => stopwatch.addResult());

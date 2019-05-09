@@ -68,7 +68,7 @@ a {
   background-color: #2fafc0;
 }
 
-#add-results {
+#add-result {
   background-color: #888888;
 }
 
@@ -92,5 +92,9 @@ a {
   text-align: left;
   min-height: 48px;
   border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
