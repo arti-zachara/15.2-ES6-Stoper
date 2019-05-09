@@ -61,6 +61,12 @@ class Stopwatch {
     this.running = false;
     clearInterval(this.watch);
   }
+
+  // method: reset watch display count
+  resetWatch() {
+    this.reset();
+    this.print();
+  }
 }
 // ----------------------- Stopwatch Class end ----------------------------------
 
@@ -82,3 +88,6 @@ startButton.addEventListener("click", () => stopwatch.start());
 
 let stopButton = document.getElementById("stop");
 stopButton.addEventListener("click", () => stopwatch.stop());
+
+let resetButton = document.getElementById("reset");
+resetButton.addEventListener("click", () => stopwatch.resetWatch());
