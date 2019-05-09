@@ -13,6 +13,7 @@ body {
 
 .container {
   margin: 10px auto;
+  padding: 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -22,15 +23,22 @@ body {
   -ms-flex-align: center;
       align-items: center;
   background-color: rgba(255, 255, 255, 0.6);
-  height: 60vh;
-  max-height: 300px;
-  width: 70vw;
+  min-height: 200px;
+  width: 80vw;
   max-width: 400px;
   border-radius: 10px;
 }
 
 .controls {
-  margin-top: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 100px;
 }
 
 a {
@@ -38,11 +46,10 @@ a {
 }
 
 .button {
-  padding: 10px 20px;
+  padding: 5px 20px;
   color: #ffffff;
   border-radius: 10px;
-  font-size: 24px;
-  margin: 15px;
+  font-size: 18px;
 }
 
 #start {
@@ -53,13 +60,37 @@ a {
   background-color: #ff4141;
 }
 
+#reset {
+  background-color: #41e9ff;
+}
+
+#reset-results {
+  background-color: #2fafc0;
+}
+
+#add-results {
+  background-color: #888888;
+}
+
 .stopwatch {
-  margin: 20px;
-  width: 300px;
-  min-height: 100px;
+  margin: 10px;
+  width: 100%;
+  padding: 5px;
   text-align: center;
   background-color: white;
   border-radius: 10px;
   font-size: 48px;
+  font-family: "Nova Mono", monospace;
+}
+
+.results {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #888888;
+  color: black;
+  width: 100%;
+  text-align: left;
+  min-height: 48px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
